@@ -22,7 +22,7 @@ def fix_size(new_width=100):
     image = open_file()
     file = image[1]
     width, height = image[0].size
-    ratio = height / width / 2.6
+    ratio = height / width / 2.4
     new_height = int(new_width * ratio)
     resized_image = image[0].resize((new_width, new_height))
     return resized_image, file
